@@ -33,7 +33,7 @@ function goAdmin(e) {
 	var admin = confirm('관리자?');
 	if(admin){
 		alert('안녕하세요 관리자님');
-		location.href = "../jsp/burgerking/main.jsp";
+		location.href = "../jsp/admin/main.jsp";
 	}else{
 		alert('관리자만 접근 가능합니다.');
 }	
