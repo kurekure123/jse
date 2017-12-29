@@ -2,7 +2,7 @@
  * 
  */
 function header() {
-	location.href = "../jsp/burgerking/main.jsp";
+	location.href = "../../jsp/burgerking/main.jsp";
 }
 
 function burgerKing() {

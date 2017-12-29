@@ -16,5 +16,5 @@
 	<aside></aside>
 	<%@ include file="../commen/footer.jsp"  %>
 		</body>
-		<script src="../../js/kakao.js"></script>
+		<script src="../../js/kakao/main.js"></script>
 </html>

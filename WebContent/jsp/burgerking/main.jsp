@@ -99,5 +99,5 @@
 		</div>
 	<%@ include file="../commen/footer.jsp"  %>
 </body>
-<script src="../../js/burgerking.js"></script>
+<script src="../../js/burgerking/burgerking.js"></script>
 </html>	

@@ -9,7 +9,7 @@
 	
 <section  id = "members_section">
 	<article>
-	<form action="../index.jsp" >
+	<form action="join.jsp" >
 		<table id = "members_table">
 			<tr >
 				<td >
@@ -18,7 +18,7 @@
 				
 				<td>
 				<input id="join_id" type="text" name="id" placeholder="아이디" />
-					<button id= "check_dupl_btn" name="id">중복확인
+					<button id= "check_dupl_btn" name="id_check">중복확인
 					</button>
 				</td>
 			<tr>
@@ -42,7 +42,7 @@
 					<p>이름 입력</p>
 				</td>	
 				<td>
-					<input type="text" name="name" placeholder="이름 입력"  />
+					<input id = "name" type="text" name="name" placeholder="이름 입력"  />
 				</td>
 			</tr>
 			<tr>	
@@ -50,8 +50,11 @@
 					<p>주민번호 입력</p>
 				</td>
 				<td>
-					<input type="text" name="snp" placeholder="주민번호 앞자리입력" /> - 
-					<input type="text" name="snp" placeholder="주민번호 뒷자리입력"  />
+					<input type="text" id ="ssn" name="ssn" placeholder="주민번호 앞자리입력" />
+					<!-- 
+					<input type="text" id ="spn1" name="ssn1" placeholder="주민번호 앞자리입력" /> - 
+					<input type="text" id="spn2" name="ssn2" placeholder="주민번호 뒷자리입력"  />
+					 -->
 				</td>
 			</tr>
 			<tr>	
@@ -59,7 +62,9 @@
 					<p>본인확인 이메일</p>
 				</td>
 				<td>
-					<input type="email" name="mail" placeholder="이메일 입력"  /> @ 
+					<input type="email" name="email" placeholder="이메일 입력"  /> 
+				<!-- 
+					<input type="email" name="email" placeholder="이메일 입력"  /> @ 
 					<select name="" id="">
 						<option value="">naver.com
 						</option>
@@ -72,6 +77,7 @@
 						<option value="">직접입력
 						</option>
 					</select>
+				 -->	
 				</td>
 			</tr>
 			<tr>	
@@ -79,17 +85,19 @@
 					<p>핸드폰 번호</p>
 				</td>
 				<td>
-					<input type="checkbox" name="telecom" value="skt"/>SKT
+					<input type="text" name="phone" />
+				 <!--	<input type="checkbox" name="telecom" value="skt"/>SKT
 					<input type="checkbox" name="telecom" value="KT"/>KT
 					<input type="checkbox" name="telecom" value="LG"/>LG <br>
-					<select name="" id="">
+					<select name="phone1" id="">
 						<option value="010">010
 						</option>
 						<option value="011">011
 						</option>	
 					</select>
-					<input style="width: 100px" pattern="[0-9]{4}" type="tel" name="number" placeholder="앞자리" /> - 
-					<input style="width: 100px" pattern="[0-9]{4}" type="tel" name="number" placeholder="뒷자리" />
+					<input style="width: 100px" pattern="[0-9]{4}" type="tel" name="phone2" placeholder="앞자리" /> - 
+					<input style="width: 100px" pattern="[0-9]{4}" type="tel" name="phone3" placeholder="뒷자리" />
+				 -->
 				</td>
 			</tr>
 			<tr>
@@ -106,7 +114,7 @@
 					<p>주소등록</p>
 				</td>
 				<td>
-					<input type="text" />
+					<input type="text" name="addr"/>
 				</td>
 			</tr>
 			
@@ -122,7 +130,7 @@
 </article>	
 </section>
 </div>	
-	<script src= "../../js/join.js"> </script>
+	<script src= "../../js/user/main.js"> </script>
 	<%@ include file="../commen/footer.jsp" %>
 	</body>
 </html>

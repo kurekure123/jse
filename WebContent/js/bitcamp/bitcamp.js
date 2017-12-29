@@ -2,6 +2,8 @@
  * 
  */
 function init(){
+	var attend = document.querySelector('#attend');
+	attend.addEventListener('click' ,check, false );
 	var arr=['burgerking', 'kakao', 'bitcamp', 'sktelecom', 'lotto'];
 	for(var i = 0; i<arr.length; i++){
 		document.querySelector('#' + arr[i]).addEventListener('click', 
@@ -9,10 +11,18 @@ function init(){
 			location.href = "../"+this.id+"/main.jsp";
 		}, false);
 	}
+
 }
 function order() {
 	
+	
 }
+
+function check() {
+	alert('클릭')
+	location.href = "result.jsp"
+}
+
 window.addEventListener("load", init,false);
 
 		

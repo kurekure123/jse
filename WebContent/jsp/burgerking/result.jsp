@@ -102,5 +102,5 @@
 	<%@ include file="../commen/footer.jsp" %>
 	
 	</body>
-	<script src="../../js/result.js"></script>
+	<script src="../../js/burgerking/result.js"></script>
 </html>

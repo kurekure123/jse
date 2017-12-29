@@ -1,17 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!doctype html>
-<html lang="en">
-<%@ include file="../commen/head.jsp" %>
-	<body>
-<%@ include file ="../commen/header.jsp" %>
-<%@ include file="../commen/nav.jsp" %>
-<section>
-<article>
-</article>
-</section>
-<aside>
-</aside>
-<%@ include file="../commen/footer.jsp" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="java.util.*" %>
+<%@ page import="com.kabank.jee.domain.AttendBean" %>
+<jsp:useBean id="attend" class="com.kabank.jee.domain.AttendBean" scope="request"/>
+<% 
+try{
+	Class.forName("oracle.jdbc.driver.OracleDriver");
+	Connection conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "bitcamp", "bitcamp");
+	Statement stmt = conn.createStatement();
+	
+}catch(Exception e){
+	e.printStackTrace();
+}
 
-	</body>
-</html>
+System.out.print("===============찍고 옴============");
+pageContext.forward("main.jsp");
+
+%>
+

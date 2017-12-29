@@ -12,5 +12,5 @@
 	<aside></aside>
 	<%@ include file="../commen/footer.jsp"  %>
 	</body>
-	<script src="../../js/sktelecom.js"></script>
+	<script src="../../js/sktelecom/sktelecom.js"></script>
 </html>

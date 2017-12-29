@@ -9,7 +9,6 @@ function init() {
 	goAdminLink.addEventListener("click", goAdmin, false);
 	goJoinLink.addEventListener("click" , goJoin, false);
 	indexLoginBtn.addEventListener("click", indexLogin, false);
-	checkPass.addEventListener("click", confirmPass, false);
 }
 
 function indexLogin(e) {
@@ -32,7 +31,6 @@ function indexLogin(e) {
 function goAdmin(e) {
 	var admin = confirm('관리자?');
 	if(admin){
-		alert('안녕하세요 관리자님');
 		location.href = "../jsp/admin/main.jsp";
 	}else{
 		alert('관리자만 접근 가능합니다.');
@@ -40,7 +38,7 @@ function goAdmin(e) {
 	
 }
 function goJoin(e){
-	location.href = "../jsp/join/member.jsp";
+	location.href = "../jsp/user/join_form.jsp";
 }
 window.addEventListener("load", init, false);
 /*

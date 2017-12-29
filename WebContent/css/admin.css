@@ -1,6 +1,7 @@
 @charset "UTF-8";
-#header{style="margin : 0px auto; text-align: center;"}
-#admin_aside{float : left; width: 150px;  height: 500px; border: 1px solid grey;}
-#admin_section{border : 1px solid grey;}
-#admin_table{width: 800px; height: 500px; margin :0px auto; border : 1px solid grey}
-#admin_table tr, td, th {width : 100px; height 100px; border : 1px solid grey;}
+#header{style="text-align: center;"}
+#admin_aside{float : left; width: 15%; height : 500px ;border: 1px solid grey;}
+#admin_section{float : center; width : 70%;height : 500px; margin: 0px auto; border : 1px solid grey;}
+#admin_table{padding-top:100px; width: 70%;margin : 0px auto;}
+#admin_table tr{width : 30%; margin: 0px auto; border : 1px solid grey;}
+#admin_table td{width : 20%; margin: 0px auto; border : 1px solid grey;}

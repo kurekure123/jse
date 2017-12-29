@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="../../css/common.css" />
 </head>
 <body>
-<div id = "wrapper">
-<header>
+<div id="wrapper">
+<header id="admin_header">
 	<h1> 관리자 메인 페이지 </h1>	
 </header>
 <aside id="admin_aside">
@@ -19,7 +19,7 @@
 		<table id="admin_table" style="">
 		 	<tr>
 		 		<td>
-		 			<input type="submit"  value="테이블 생성"/>
+		 			<a id="create_table" href = "#">테이블 생성</a>
 		 		</td>
 		 		<td>
 		 			<p>2</p>
@@ -35,12 +35,14 @@
 		 		<td>
 		 			<p>5</p>
 		 		</td>
-		 		<td >
+		 		<td>
 		 			<p>6</p>
 		 		</td>
 		 	</tr>
 	</table>
-</section>	
-</div>		
+</section>	 	
+</div>
+<%@ include file="../commen/footer.jsp" %>
 </body>
+<script src="../../js/admin/main.js"></script>
 </html>
